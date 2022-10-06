@@ -1,9 +1,9 @@
-# TaskApi
+# TaskAPI
 Task management API that allows you to manage your tasks.
 The API base url is `http://taskapi-env.eba-nvskuape.us-east-1.elasticbeanstalk.com`
 
 ## Endpoints ##
-### List of tasks ###
+### Fetch tasks ###
 GET `/api/v1/tasks`
 
 This request returns a list of tasks.The response looks like this
@@ -40,7 +40,7 @@ The request requires a body with the following attributes:
 
 
  - `title` - String - Required
- - `compeleted` - Boolean - Required
+ - `completed` - Boolean - Required
 
 The response is a Json object that looks like this
 
@@ -57,7 +57,7 @@ PUT `/api/v1/id`
 The request requires either of the following parameters:
 
  - `title` - String 
- - `compeleted` - Boolean
+ - `completed` - Boolean
 
 The response is a Json object with attributes of the updated task
 ```

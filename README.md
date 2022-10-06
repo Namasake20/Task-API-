@@ -52,9 +52,9 @@ The response is a Json object that looks like this
 }
 ```
 ### Update existing task ###
-PUT `/api/v1/{"id"}`
+PUT `/api/v1/id`
 
-The request requires either the following parameters:
+The request requires either of the following parameters:
 
  - `title` - String 
  - `compeleted` - String
@@ -69,7 +69,7 @@ The response is a Json object with attributes of the updated task
 ```
 
 ### Delete task ###
-DELETE `/api/v1/{"id"}`
+DELETE `/api/v1/id`
 
 The response is a 200 OK status code
 

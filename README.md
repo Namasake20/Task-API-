@@ -2,7 +2,7 @@
 Task management API that allows you allows you to manage your tasks.
 The API base url is `http://taskapi-env.eba-nvskuape.us-east-1.elasticbeanstalk.com`
 
-##Endpoints
+## Endpoints ##
 ### List of tasks ###
 GET `/api/v1/tasks`
 This request returns a list of tasks.The response looks like this
@@ -32,10 +32,12 @@ This request returns a list of tasks.The response looks like this
 ```
 ### Save new task ###
 POST `/api/v1/task/save`
-Enables you to save a new task.The request requires a body with the following attributes
+Enables you to save a new task.The request requires a body with the following attributes:
+
  -`title` - String - Required
  - `compeleted` - String - Required
 The response is a Json object that looks like this
+
 ```
 {
     "id": 6,
@@ -45,7 +47,8 @@ The response is a Json object that looks like this
 ```
 ### Update existing task ###
 PUT `/api/v1/{"id"}`
-The request requires either the following parameters
+The request requires either the following parameters:
+
  -`title` - String 
  - `compeleted` - String
 
@@ -59,7 +62,7 @@ The response is a Json object with attributes of the updated task
 ```
 
 ### Delete task ###
-DELETE '/api/v1/{"id"}`
+DELETE `/api/v1/{"id"}`
 
 The response is a 200 OK status code
 

@@ -34,7 +34,7 @@ This request returns a list of tasks.The response looks like this
 POST `/api/v1/task/save`
 Enables you to save a new task.The request requires a body with the following attributes:
 
- -`title` - String - Required
+ - `title` - String - Required
  - `compeleted` - String - Required
 The response is a Json object that looks like this
 
@@ -49,7 +49,7 @@ The response is a Json object that looks like this
 PUT `/api/v1/{"id"}`
 The request requires either the following parameters:
 
- -`title` - String 
+ - `title` - String 
  - `compeleted` - String
 
 The response is a Json object with attributes of the updated task

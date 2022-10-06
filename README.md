@@ -41,6 +41,7 @@ The request requires a body with the following attributes:
 
  - `title` - String - Required
  - `completed` - Boolean - Required
+ - `id` - Long - Optional 
 
 The response is a Json object that looks like this
 

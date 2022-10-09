@@ -3,16 +3,16 @@ package com.namasake.task.service;
 import com.namasake.task.domain.Task;
 import com.namasake.task.repo.TaskRepo;
 import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
 @Service @AllArgsConstructor
-@Slf4j
+@Slf4j @Transactional
 public class TaskServiceImpl implements TaskService{
     private final TaskRepo taskRepo;
     @Override
